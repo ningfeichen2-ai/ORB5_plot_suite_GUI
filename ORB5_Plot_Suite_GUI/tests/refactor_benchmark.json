@@ -1,0 +1,14 @@
+{
+  "before": {
+    "potential_load_seconds": 5.6293632,
+    "transport_load_seconds": 2.0348343,
+    "correlation_seconds": 0.8240712,
+    "spectrum_seconds": 0.1693536
+  },
+  "after": {
+    "potential_load_seconds": 1.7574837,
+    "transport_load_seconds": 1.2194977,
+    "correlation_seconds": 0.5089679,
+    "spectrum_seconds": 0.0752747
+  }
+}
