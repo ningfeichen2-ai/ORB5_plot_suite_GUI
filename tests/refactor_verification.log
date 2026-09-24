@@ -1,0 +1,149 @@
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 160000.00]
+PASS: refactored data and spectrum match the pre-refactor baseline.
+Before:
+    potential_load_seconds: 5.6294
+    transport_load_seconds: 2.0348
+       correlation_seconds: 0.8241
+          spectrum_seconds: 0.1694
+
+After:
+    potential_load_seconds: 1.7575
+    transport_load_seconds: 1.2195
+       correlation_seconds: 0.5090
+          spectrum_seconds: 0.0753
+
+    potential_load_seconds: 1.7575
+    transport_load_seconds: 1.2195
+       correlation_seconds: 0.5090
+          spectrum_seconds: 0.0753
+
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 11.00]
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 11.00]
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 11.00]
+PASS: parser, discovered species, missing diagnostics, independent clocks, moments, GUI controls, timer cleanup, invalid shapes.
+PASS: CWT slices match full complex CWT, including both boundaries.
+PASS: vectorized correlation matches the original loop at interior and boundary radii.
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 160000.00]
+PASS load_potential (1.22s)
+
+TIME potential: [0, 160.301]; 1601 samples
+START phimax_lfs_Cs
+PASS phimax_lfs_Cs (1.26s)
+
+START radial_st
+PASS radial_st (1.48s)
+
+START radial_potential
+PASS radial_potential (1.93s)
+
+START temporal_potential
+PASS temporal_potential (1.90s)
+
+START plot_potsc
+PASS plot_potsc (2.13s)
+
+START phi_s_omega
+PASS phi_s_omega (2.07s)
+
+START f_Cs
+PASS f_Cs (0.96s)
+
+START cross_correlation
+PASS cross_correlation (1.95s)
+
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 160000.00]
+PASS plot_dTi_theory (2.08s)
+
+PASS hfs (0.01s)
+Electrostatic coefficients used to verify reconstruction; no A-parallel dataset in this run.
+PASS get_theory_overlay (0.36s)
+Runtime check at sample 31; physical model not revalidated.
+PASS load_transport (0.97s)
+
+TIME transport: [0, 160.301]; 641 samples
+START radial_flux
+PASS radial_flux (2.44s)
+
+START temporal_flux
+PASS temporal_flux (2.41s)
+
+START radial_transport
+PASS radial_transport (1.95s)
+
+START temporal_transport
+PASS temporal_transport (2.01s)
+
+START transport_st
+PASS transport_st (0.48s)
+
+START transport_st_RoLT_component
+PASS transport_st_RoLT_component (0.25s)
+
+START eflux0d
+PASS eflux0d (0.27s)
+
+START energy
+PASS energy (0.39s)
+
+START convergence
+PASS convergence (0.41s)
+
+PASS load_equilibrium (0.38s)
+
+START equilibrium
+PASS equilibrium (0.66s)
+
+PASS load_calculator (0.01s)
+
+START calculator
+PASS calculator (1.52s)
+
+Loading Potential Data...
+Data preparation complete. Time range: [0.00, 160000.00]
+GUI PASS phimax_lfs_Cs
+GUI PASS radial_st
+GUI PASS radial_potential
+GUI PASS temporal_potential
+GUI PASS plot_potsc
+GUI PASS phi_s_omega
+GUI PASS f_Cs
+GUI PASS cross_correlation
+GUI PASS radial_flux
+GUI PASS temporal_flux
+GUI PASS radial_transport
+GUI PASS temporal_transport
+GUI PASS transport_st
+GUI PASS transport_st_RoLT_component
+GUI PASS eflux0d
+GUI PASS energy
+GUI PASS convergence
+GUI PASS equilibrium
+GUI PASS calculator
+PASS: all 19 main GUI actions on the real run.
+
+CHECK orb5_data.m
+
+CHECK orb5_equilibrium.m
+L 42 (C 72-75): LAXES: 在循环中调用 AXES(h) 可能速度较慢。请考虑将对 AXES 的调用移出循环。
+
+
+CHECK orb5_interface.m
+L 92 (C 22-25): MOCUP: 变量 'busy' 为 uplevel 变量，在 onCleanup 调用的函数中无效。
+
+
+CHECK orb5_potential.m
+
+CHECK orb5_transport.m
+L 143 (C 36-40): AGROW: 变量似乎要更改每个循环迭代的大小。请考虑对速度进行预分配。
+L 144 (C 35-39): AGROW: 变量似乎要更改每个循环迭代的大小。请考虑对速度进行预分配。
+L 145 (C 40-44): AGROW: 变量似乎要更改每个循环迭代的大小。请考虑对速度进行预分配。
+L 204 (C 76-79): LAXES: 在循环中调用 AXES(h) 可能速度较慢。请考虑将对 AXES 的调用移出循环。
+L 217 (C 60-63): LAXES: 在循环中调用 AXES(h) 可能速度较慢。请考虑将对 AXES 的调用移出循环。
+L 280 (C 72-75): LAXES: 在循环中调用 AXES(h) 可能速度较慢。请考虑将对 AXES 的调用移出循环。
+
